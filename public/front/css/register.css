@@ -1,0 +1,220 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: unset !important;
+}
+button {
+    border: unset;
+}
+
+.container-cpns {
+    width: 92%;
+    max-width: 1324.8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#main {
+    min-height: 90%;
+    padding: 100px 0px;
+}
+#main .main-description {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    color: #2D6187;
+}
+#main .main-form {
+    width: 750px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+#main .main-form label {
+    font-weight: 500;
+    font-size: 18px;
+    color: #363636;
+}
+#main .form-control {
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: unset;
+    font-size: 16px;
+    color: rgba(54, 54, 54, 1);
+}
+#main .form-control:focus {
+    box-shadow: unset;
+}
+#main select {
+    font-weight: 400 !important;
+    color: #363636 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#main .domisili-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+#main ::placeholder {
+    color: rgba(54, 54, 54, 0.5);
+}
+#main .main-text-small {
+    display: block;
+    line-height: 16.94px;
+    font-size: 14px;
+    color: #2D6187;
+}
+#main .main-forgot {
+    font-size: 16px;
+    color: #2D6187;
+}
+#main .main-button {
+    height: 50px;
+    width: 502px;
+    max-width: 100%;
+    background-color: #2D6187;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+#main .main-text-bottom {
+    font-size: 16px;
+    color: rgba(54, 54, 54, 0.7);
+}
+#main .main-text-bottom a {
+    color: #2D6187;
+}
+#main .main-login-with {
+    width: 750px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+#main .text-login-with {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main .text-login-with p {
+    font-size: 16px;
+    margin: 0px 0.5rem;
+    color: rgba(54, 54, 54, 0.5);
+    white-space: nowrap;
+}
+#main .login-line {
+    height: 1px;
+    width: 40%;
+    display: block;
+    background-color: rgba(54, 54, 54, 0.25);
+}
+#main .login-social-media {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#main .login-social-media button {
+    height: 50px;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    color: #363636;
+}
+@media (max-width: 992px) { 
+    #main .form-control {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) { 
+    #main .form-control {
+        height: 47.5px;
+    }
+}
+@media (max-width: 576px) {
+    #main {
+        padding: 60px 0px 30px;
+    }
+    #main .main-description {
+        margin-top: 0.5rem;
+        font-size: 14px;
+    }
+    #main .main-form label {
+        font-size: 15px;
+    }
+    #main .main-text-small {
+        font-size: 12px;
+    }
+    #main .main-forgot {
+        font-size: 16px;
+        color: #2D6187;
+    }
+    #main .main-button {
+        font-size: 16px;
+    }
+    #main .main-text-bottom {
+        font-size: 14px;
+    }
+    #main .main-login-with {
+        width: 750px;
+        max-width: 100%;
+        margin: 0px auto;
+    }
+    #main .text-login-with p {
+        font-size: 14px;
+    }
+    #main .login-line {
+        width: 37.5%;
+    }
+    #main .login-social-media button {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+#footer {
+    height: 10%;
+    border-top: 1px solid rgba(168, 168, 168, 0.25);
+}
+#footer .footer-copyright {
+    font-weight: 400;
+    font-size: 16px;
+    color: #363636;
+}
+#footer .footer-link {
+    font-size: 16px;
+    color: #2D6187;
+}
+@media (max-width: 992px) { 
+    #footer .footer-copyright, #footer .footer-link {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) { 
+    #footer {
+        height: auto;
+        padding: 30px 0rem;
+    }
+    #footer .footer-link {
+        font-size: 14px;
+    }
+}

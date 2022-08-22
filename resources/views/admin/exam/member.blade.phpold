@@ -1,0 +1,40 @@
+@extends('layouts.dashboard')
+
+@section('content')
+
+<div class="card">
+	<div class="card-body">
+		<h5>{{ $title }}</h5>
+
+		<table class="table table-bordered mt-3">
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Nama Lengkap</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Domisili</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if(count($datas) == 0)
+				<tr>
+					<td colspan="7" class="text-center">Belum Member</td>
+				</tr>
+				@else
+					@foreach($datas as $k => $v)
+					<tr>
+						<td>{{ $k+1 }}</td>
+						<td>{{ $v->name }}</td>
+						<td>{{ $v->email }}</td>
+						<td>{{ $v->phone }}</td>
+						<td>{{ $v->domisili }}</td>
+					</tr>
+					@endforeach
+				@endif
+			</tbody>
+		</table>
+		{!!  $datas->links() !!}
+	</div>
+</div>
+@endsection

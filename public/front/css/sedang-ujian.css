@@ -1,0 +1,434 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+@media(max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+a, button {
+    text-decoration: unset !important;
+    transition: 0.2s ease-in;
+}
+button {
+    border: unset;
+}
+
+.container-cpns {
+    width: 92%;
+    max-width: 1324.8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#nav {
+    width: 100%;
+    padding: 50px 0rem;
+}
+#nav .container-cpns {
+    background-color: #2D6187;
+}
+#nav .container-cpns .col-lg-12 {
+    padding: 1rem 3rem;
+}
+#nav h1 {
+    font-weight: 500;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+#nav strong {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+@media (max-width: 576px) {
+    #nav {
+        width: 100%;
+        padding: 0px 0rem 30px;
+    }
+    #nav .container-cpns {
+        width: 100%;
+    }
+    #nav .row {
+        margin: 0px;
+    }
+    #nav .container-cpns .col-lg-12 {
+        padding: 1rem 15px;
+    }
+    #nav h1 {
+        font-size: 16px;
+    }
+    #nav strong {
+        font-size: 20px;
+    }
+}
+
+#main {
+    width: 100%;
+}
+#main .no-soal-ujian h5 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #363636;
+}
+#main .soal-ujian {
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid rgba(54, 54, 54, 0.5);
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(54, 54, 54, 0.9);
+}
+#main .jawaban-ujian {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#main .jawaban-ujian strong {
+    width: 40px;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #363636;
+}
+#main .jawaban-ujian p {
+    width: calc(100% - 40px);
+    padding: 0.8rem 1.2rem;
+    border: 1px solid rgba(54, 54, 54, 0.5);
+    font-size: 20px;
+    color: rgba(54, 54, 54, 0.9);
+}
+#main .jawaban-dipilih {
+    background: rgba(0, 175, 80, 0.15) !important;
+    border: 1px solid #00AF50 !important;
+    color: #363636 !important;
+}
+@media (max-width: 576px) {
+    #main .no-soal-ujian h5 {
+        font-size: 16px;
+    }
+    #main .soal-ujian {
+        margin-bottom: 0.8rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 14px;
+    }
+    #main .jawaban-ujian {
+        align-items: flex-start;
+        margin-bottom: 0.8rem;
+    }
+    #main .jawaban-ujian strong {
+        width: 30px;
+        font-size: 18px;
+    }
+    #main .jawaban-ujian p {
+        width: calc(100% - 30px);
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+}
+
+#section {
+    width: 100%;
+    padding: 0rem 0rem 120px;
+    background-color: #fff;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+#section .row-btn-3 {
+    margin-bottom: 2rem;
+}
+#section .btn-lewati, #section .btn-ragu, #section .btn-simpan, #section .btn-ragu-outline {
+    height: 47px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1.5rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+#section .btn-lewati {
+    background-color: #4D94D2;
+}
+#section .btn-ragu-outline {
+    border: 1px solid #EA8034;
+    background: #fff;
+    color: #EA8034;
+}
+#section .btn-ragu {
+    background-color: #EA8034;
+    color: #fff;
+}
+#section .btn-simpan {
+    background-color: #00AF50;
+}
+#section .section-line-top-bottom {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+#section .section-list-soal {
+    position: relative;
+    width: calc(62% - 1px);
+    padding: 0px 80px 0px 50px;
+}
+#section .swiper-slide {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px) calc(10% - 18px);
+}
+#section .swiper-slide .daftar-nomor-soal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+#section .swiper-slide .daftar-nomor-soal-green {
+    background-color: #00AF50;
+    color: #FFFFFF;
+}
+#section .swiper-slide .daftar-nomor-soal-red {
+    background-color: #D23333;
+    color: #FFFFFF;
+}
+#section .swiper-slide .daftar-nomor-soal-orange {
+    background-color: #EA8034;
+    color: #FFFFFF;
+}
+#section .swiper-slide .daftar-nomor-soal-gray {
+    background-color: #C4C4C4;
+    color: rgba(54, 54, 54, 0.5);
+}
+#section .swiper-slide .daftar-nomor-soal-blue {
+    background-color: #2D6187;
+    color: #fff;
+}
+#section .swiper-nav {
+    width: calc(100% - 25px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+#section .swiper-button-prev-review, #section .swiper-button-next-review {
+    outline: none !important;
+}
+#section .line-list-info {
+    height: 154px;
+    width: 1px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+#section .section-info-soal {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 1rem;
+}
+#section .section-info-soal p {
+    font-size: 20px;
+    color: rgba(54, 54, 54, 0.9);
+}
+#section .section-info-soal strong {
+    font-weight: 600;
+    font-size: 25px;
+    color: #363636;
+}
+#section .selesai-ujian {
+    height: 61px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D6187;
+    padding: 0rem 2rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+#section .btn-swipe-up-down {
+    background-color: transparent;
+    font-size: 12px;
+    color: rgba(54, 54, 54, 0.25);
+}
+@media (max-width: 1200px) {
+    #section .swiper-slide {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        grid-template-columns: calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px) calc(10% - 14px);
+    }
+    #section .swiper-slide .daftar-nomor-soal {
+        font-size: 18px;
+    }
+    #section .section-info-soal p {
+        font-size: 17px;
+    }
+    #section .section-info-soal strong {
+        font-size: 21px;
+    }
+}
+@media (max-width: 992px) {
+    #section .section-list-soal {
+        position: relative;
+        width: 100%;
+        padding: 0px 50px;
+        margin-bottom: 40px;
+    }
+    #section .swiper-nav {
+        width: 100%;
+    }
+    #section .section-info-soal {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 768px) {
+    #section {
+        position: absolute;
+        top: calc(100% - 130px);
+        border-top: 1px solid #E5E5E5;
+    }
+    #section .row-btn-3 {
+        margin-bottom: 150px;
+    }
+    #section .btn-lewati, #section .btn-ragu, #section .btn-simpan {
+        height: 46px;
+        width: 30.5%;
+        padding: 0rem 0rem;
+        font-size: 15px;
+    }
+    #section .section-list-soal {
+        position: relative;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    #section .swiper-slide {
+        grid-column-gap: 7.5px;
+        grid-row-gap: 7.5px;
+        grid-template-columns: calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px) calc(10% - 6.75px);
+    }
+    #section .swiper-slide .daftar-nomor-soal {
+        font-size: 14px;
+    }
+    #section .section-info-soal {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #section .swiper-nav {
+        width: 100%;
+    }
+    #section .swiper-nav .swiper-button-prev-review, #section .swiper-nav .swiper-button-next-review  {
+        height: 20px;
+        width: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    #section .swiper-nav .swiper-button-prev-review svg {
+        transform: rotate(180deg);
+    }
+    #section .section-info-soal p {
+        font-size: 14px;
+    }
+    #section .section-info-soal strong {
+        font-size: 20px;
+    }
+    #section .selesai-ujian {
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+#ujianSelesaiModal .file-ujian-modal {
+    width: 50px;
+}
+#ujianSelesaiModal .file-ujian-modal span {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 97, 135, 0.25);
+}
+#ujianSelesaiModal .text-ujian-modal {
+    width: 100%;
+}
+#ujianSelesaiModal .text-ujian-modal h5 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+#ujianSelesaiModal .text-ujian-modal p {
+    padding-left: 50px;
+    font-size: 20px;
+    color: rgba(54, 54, 54, 0.7);
+}
+#ujianSelesaiModal .text-ujian-modal p strong {
+    font-weight: 600;
+}
+#ujianSelesaiModal .button-footer {
+    padding-left: 50px;
+}
+#ujianSelesaiModal .text-ujian-modal button {
+    white-space: nowrap;
+    height: 47px;
+    width: 47.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2D6187;
+    font-weight: 600;
+    font-size: 20px;
+}
+#ujianSelesaiModal .text-ujian-modal .selesaiModal {
+    background-color: #2D6187;
+    color: #fff;
+}
+#ujianSelesaiModal .text-ujian-modal .periksaModal {
+    background-color: #fff;
+    color: #2D6187;
+}
+#ujianSelesaiModal .close-modal-ujian {
+    position: absolute;
+    right: 15px;
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    #ujianSelesaiModal .text-ujian-modal h5 {
+        font-size: 18px;
+    }
+    #ujianSelesaiModal .text-ujian-modal p {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+    #ujianSelesaiModal .button-footer {
+        padding-left: 0px;
+    }
+    #ujianSelesaiModal .button-footer button {
+        height: 40px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
